@@ -4,6 +4,8 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/app-react" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/phpredis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/study-electron" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/study-node" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/wvs" vcs="Git" />
   </component>
 </project>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <div id="show"></div>
+    <script>
+        // you can write to stdout for debugging purposes, e.g.
+        // console.log('this is a debug message');
+
+        function solution(S) {
+            // write your code in JavaScript (Node.js 8.9.4)
+            let result = ''
+            let partten = /\D+/g
+            newS = S.replace(partten, '')
+            newS = newS.replace(/\s/g, '')
+            let times = Math.ceil(newS.length / 3)
+            for (i = 0; i < times; i++) {
+                if (i >= times - 2 && newS.substr((times - 1) * 3).length < 2) {
+                    result = result + newS.substr(i * 2, 2) + "-"
+                } else {
+                    result = result + newS.substr(i * 3, 3) + "-"
+                }
+            }
+            result = result.substr(0, result.length - 1)
+            return (result)
+        }
+
+        solution("044  1985--324")
+        // solution([-11, -3, -6, -3, -4, -5])
+    </script>
+</body>
+
+</html>
